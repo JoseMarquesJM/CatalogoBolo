@@ -47,7 +47,7 @@
         var parametros = new DialogParameters();
         parametros.Add("Bolo", new Bolo());
 
-        var dialog = _dialogService.Show<GerenciaBolosDialog>("Incluir", parametros);
+        var dialog = _dialogService.Show<GerenciaBolosDialog>("Adicionar", parametros);
         var result = await dialog.Result;
 
         if (!result.Canceled)
